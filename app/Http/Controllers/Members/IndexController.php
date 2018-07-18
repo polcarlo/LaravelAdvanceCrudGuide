@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Members\IndexController;
 use App\Models\Members;
+use DataTables;
 
 class IndexController extends Controller
 {

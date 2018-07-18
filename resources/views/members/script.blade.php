@@ -1,5 +1,5 @@
 <script>
-	
+
 //Insert Database
  $(document).ready(function(){
                 $("#add-data").click(function(){
@@ -21,7 +21,10 @@
 					dataType:"json",
 					success: function(data)
 					{
-						if(data.error.length >0)
+						console.log('aaa');
+						alert('Success');
+					
+					/*	if(data.error.length >0)
 						{
 							var error_html = '';
 							for(var count = 0; count < data.error.length;count++)
@@ -31,13 +34,14 @@
 							$('#form_output').html(error_html);
 						} else
 						{
+							alert('Success');
 							$('#form_output').html(data.success);
 							$('#student_form')[0].reset();
 							$('#action').val('add');
 							$('.modal-title').text('Add Data');
 							$('#button_action').val('insert');
 							$('#student_table').DataTable().ajax.reload();
-						}
+						}*/
 					}
 			});
 		});

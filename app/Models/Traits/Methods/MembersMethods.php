@@ -20,7 +20,8 @@ trait MembersMethods
         $data = prepareData($data, $this->fillable, $request, $this->nullable);
         if ($data->save()) {
             
-            return $data;
+            
+            echo json_encode($data);
         }
 
         return false; 
